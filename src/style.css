@@ -8,6 +8,9 @@
 .imagem-carrossel-dois {
     object-fit: cover;
     height: 400px;
-    /* object-position: 0 80%; */
 
+}
+
+.font-estilo {
+    font-family: 'Pacifico', cursive;
 }
