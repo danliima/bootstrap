@@ -17,7 +17,7 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-light fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand font-estilo cor_especial" href="#">Fruto & Fruta</a>
+        <a class="navbar-brand font-estilo cor_especial" href="#">Fruta&Fruto</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,8 @@
             <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Início</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Receitas</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Quem somos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">contato</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-contato"
+                href="#">contato</a></li>
           </ul>
         </div>
       </div>
@@ -148,7 +149,44 @@
   </main>
 
 
-  <p>contato:<a href="mailto:email@frutafruto.com.br">email@frutafruto.com.br</a></p>
+  <!-- Modal -->
+  <section class="modal fade cor_especial" id="modal-contato" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <header class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Entre em contato</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </header>
+        <main class="modal-body">
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Nome completo:</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Insira seu nome completo">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Endereço de e-mail:</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+            </article>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Deixe o seu comentário:</label>
+              <textarea class="form-control" placeholder="Insira aqui o seu comentário" id="exampleFormControlTextarea1"
+                rows="3"></textarea>
+            </div>
+          </div>
+          <footer class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn botao-cor-especial">Enviar</button>
+          </footer>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-secondary p-3">
+    <p class="text-light m-0 text-center">contato: <a class="text-light"
+        href="mailto:email@frutafruto.com.br">email@frutafruto.com.br</a></p>
+  </footer>
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
